@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CheckboxTree</title>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript" src="/js/checkboxtree.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <header>
+            <h3>Checkboxes tree</h3>
+        </header>
+        <content>
+            <ul>
+                <li>
+                    <input type="checkbox" class="actionCheckboxes" id="section_1">
+                    <span>section_1</span>
+                    <ul>
+                        <li>
+                            <input type="checkbox" class="actionCheckboxes parent-section_1" id="section_1_1">
+                            <span>section_1_1</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="actionCheckboxes parent-section_1" id="section_1_2">
+                            <span>section_1_2</span>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" class="actionCheckboxes parent-section_1_2" id="section_1_2_1">
+                                    <span>section_1_2_1</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="actionCheckboxes parent-section_1_2" id="section_1_2_2">
+                                    <span>section_1_2_2</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="checkbox" class="actionCheckboxes" id="section_2">
+                    <span>section_2</span>
+                </li>
+                <li>
+                    <input type="checkbox" class="actionCheckboxes" id="section_3">
+                    <span>section_3</span>
+                     <ul>
+                        <li>
+                            <input type="checkbox" class="actionCheckboxes parent-section_3" id="section_3_1">
+                            <span>section_3_1</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="actionCheckboxes parent-section_3" id="section_3_2">
+                            <span>section_3_2</span>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="checkbox" class="actionCheckboxes" id="section_4">
+                    <span>section_4</span>
+                     <ul>
+                        <li>
+                            <input type="checkbox" class="actionCheckboxes parent-section_4" id="section_4_1">
+                            <span>section_4_1</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="actionCheckboxes parent-section_4" id="section_4_2">
+                            <span>section_4_2</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="actionCheckboxes parent-section_4" id="section_4_3">
+                            <span>section_4_3</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="actionCheckboxes parent-section_4" id="section_4_4">
+                            <span>section_4_4</span>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" class="actionCheckboxes parent-section_4_4" id="section_4_4_1">
+                                    <span>section_4_4_1</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="actionCheckboxes parent-section_4_4" id="section_4_4_2">
+                                    <span>section_4_4_2</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="actionCheckboxes parent-section_4_4" id="section_4_4_3">
+                                    <span>section_4_4_3</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="actionCheckboxes parent-section_4_4" id="section_4_4_4">
+                                    <span>section_4_4_4</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="actionCheckboxes parent-section_4" id="section_4_5">
+                            <span>section_4_5</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="actionCheckboxes parent-section_4" id="section_4_6">
+                            <span>section_4_6</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </content>
+        <script type="text/javascript">
+            $(function(){
+               // click by checkbox
+                $('.actionCheckboxes').on('click', clickByCheckbox);
+            });
+        </script>
+    </body>
+</html>
