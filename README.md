@@ -12,3 +12,5 @@ with parent and child checkboxes.
 6) Include checkboxtree.js;<br/>
 7) Include $('.actionCheckboxes').on('click', clickByCheckbox) in the document.ready function;<br/>
 8) That`s all! Enjoy!
+
+P.S.: CheckboxTree will work in one-level list too! Try it!

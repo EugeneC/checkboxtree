@@ -41,9 +41,9 @@ function setCheckForChild(parent, isChecked){
     // (un) check all child elements
     var childElements = $('.parent-' + parent.attr('id'))
      if (isChecked){
-        var children = childElements.prop('checked', true);
+        childElements.prop('checked', true);
     }else{
-        var children = childElements.prop('checked', false);
+        childElements.prop('checked', false);
     }
 
     // setCheckForChild for each child elements
